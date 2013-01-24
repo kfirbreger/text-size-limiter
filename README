@@ -1,7 +1,7 @@
 # Text Size Limiter
 It is sometimes needed to limit the amount of characters displayed. This is however not straight forward as html tags and elements are counted as multiple characters while it is possible that they are not at all displayed. This class offers a service of limiting the size of a well formatted html string based on the length of the visible characters. It makes sure that it maintains the correctness of the html within the string. Note that it only support correctly formatted html at the moment.
 
-#Usage
+## Usage
 
 1. Create an object from the TextSizeLimiter class
 2. Use the load() function to load the string 
@@ -14,7 +14,8 @@ There is an internal logging. Logging level is set to 0 by default, which does n
 
 Setting the log level is done through the setLog. Retrieving the log stack is done with the getLogStack function.
 
-# Notes
+## Notes
+
 * Negative integers are allowed as limit. This will be the amount of chars cut from the end of the string.
 * If the html in the string is ill formatted, the results can be weird.
 
